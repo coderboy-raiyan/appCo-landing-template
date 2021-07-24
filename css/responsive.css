@@ -1,0 +1,137 @@
+/*=============================
+::2.0 Global variables css
+=================================*/
+:root {
+  /* background colors  */
+  --bg-linear-gradient: linear-gradient(
+    to right,
+    rgba(32, 40, 119, 0.95),
+    rgba(55, 46, 149, 0.95),
+    rgba(83, 49, 177, 0.9),
+    rgba(114, 48, 205, 0.85),
+    rgba(150, 41, 230, 0.95)
+  );
+  --bg-primary: #f4f7fa;
+  --bg-white: #fff;
+  --bg-card: #6730e3;
+
+  /* Text colors */
+  --text-black: #000;
+  --text-blue: #6730e3;
+  -text-white: #fff;
+  --text-grey: #a1a4a7;
+}
+
+/*============================
+  ::2.0 Mobile Devices
+  ==============================*/
+@media only screen and (max-width: 768px) {
+  /*=============================
+  ::4.0 Header css
+  =================================*/
+  .navbar {
+    padding: 1rem 0;
+  }
+  .navbar-brand {
+    width: 50%;
+  }
+  .navbar-brand img {
+    max-width: 40%;
+  }
+  .navbar {
+    padding: 1rem 0;
+  }
+  .navbar-brand {
+    width: 50%;
+  }
+  .navbar-brand img {
+    max-width: 40%;
+  }
+  .navbar .navbar-toggler {
+    padding-right: 0;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+  }
+  .navbar .navbar-nav {
+    background: var(--bg-white);
+    text-align: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #000;
+    padding: 1rem 1rem;
+  }
+  /*=============================
+    ::5.0 Hero css
+    =================================*/
+  #home {
+    padding-top: 7rem;
+  }
+  .hero-image {
+    width: 90%;
+  }
+  .hero_text {
+    margin-top: 4rem;
+    /* text-align: center; */
+    padding-bottom: 2rem;
+  }
+}
+
+/*============================
+  ::1.0 Tablet Devices
+  ==============================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*=============================
+  ::4.0 Header css
+  =================================*/
+  .navbar {
+    padding: 1rem 0;
+  }
+  .navbar-brand {
+    width: 50%;
+  }
+  .navbar-brand img {
+    max-width: 40%;
+  }
+  .navbar .navbar-toggler {
+    padding-right: 0;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+  }
+  .navbar .navbar-nav {
+    background: var(--bg-white);
+    text-align: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #000;
+    padding: 1rem 1rem;
+  }
+  /*=============================
+  ::5.0 Hero css
+  =================================*/
+
+  .hero-image {
+    width: 90%;
+  }
+}

@@ -1,0 +1,269 @@
+/* 
+=====::Index of css::*******
+::1.0 Web fonts
+::2.0 Global variables css
+::3.0 Common css
+::4.0 Header css
+::5.0 Hero css
+::6.0 Counter css
+::7.0 Features css
+::8.0 About css
+::9.0 Best features css
+::10.0 Vidoe overview css
+::11.0 Pricing css
+::12.0 Trusted client css
+::13.0 Screenshots css
+::14.0 Accordian css
+::15.0 Blog css
+::16.0 Team css
+::17.0 Contact css
+::18.0 Lovely clinet css
+::19.0 Footer
+===================================*/
+
+/*=============================
+::1.0 Web fonts
+=================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*=============================
+::2.0 Global variables css
+=================================*/
+:root {
+  /* background colors  */
+  --bg-linear-gradient: linear-gradient(
+    to right,
+    rgba(32, 40, 119, 0.95),
+    rgba(55, 46, 149, 0.95),
+    rgba(83, 49, 177, 0.9),
+    rgba(114, 48, 205, 0.85),
+    rgba(150, 41, 230, 0.95)
+  );
+  --bg-primary: #f4f7fa;
+  --bg-white: #fff;
+  --bg-card: #6730e3;
+
+  /* Text colors */
+  --text-black: #000;
+  --text-blue: #6730e3;
+  -text-white: #fff;
+  --text-grey: #a1a4a7;
+}
+/*=============================
+::3.0 Common css
+=================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-black);
+}
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--text-black);
+}
+a,
+a:hover,
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+li {
+  list-style: none;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.btn {
+  font-size: 1.8rem;
+  padding: 1.8rem 2.8rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  background: transparent;
+  font-weight: 600;
+  color: var(--bg-white);
+}
+.btn:hover {
+  color: var(--text-blue);
+  background: #fff;
+}
+.section,
+section {
+  position: relative;
+}
+/* Section padding */
+.ptb_100 {
+  padding: 10rem 0;
+}
+/*=============================
+::4.0 Header css
+=================================*/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background: transparent;
+}
+.navbar .navbar-nav .nav-link {
+  color: #dce1e7;
+  font-weight: 400;
+  padding: 1.8rem 1.7rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-brand img {
+  max-width: 75%;
+}
+
+/* Navbar fixed  */
+/* .navbar-sticky {
+  position: fixed;
+  top: 0;
+  background: var(--bg-linear-gradient);
+} */
+
+/*=============================
+::5.0 Hero css
+=================================*/
+#home {
+  height: 100%;
+  min-height: 80rem;
+  background: var(--bg-linear-gradient), url(../img/hero-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .hero_text h3 {
+  font-size: 1.5rem;
+  color: var(--bg-white);
+}
+#home .hero_text h1 {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: var(--bg-white);
+  margin-bottom: 2rem;
+}
+#home .hero_text p {
+  font-size: 1.7rem;
+  color: var(--bg-white);
+  line-height: 3.6rem;
+}
+#home .hero_text a {
+  border: 1px solid #fff;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.hero-image {
+  width: 80%;
+}
+.hero-image img {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  animation: upDwon 3s ease-in-out infinite alternate;
+  -webkit-animation: upDwon 3s ease-in-out infinite alternate;
+}
+@keyframes upDwon {
+  0% {
+    transform: rotate(5deg) translateY(0%);
+    -webkit-transform: rotate(5deg) translateY(0%);
+    -moz-transform: rotate(5deg) translateY(0%);
+    -ms-transform: rotate(5deg) translateY(0%);
+    -o-transform: rotate(5deg) translateY(0%);
+  }
+  100% {
+    transform: rotate(5deg) translateY(5%);
+    -webkit-transform: rotate(5deg) translateY(5%);
+    -moz-transform: rotate(5deg) translateY(5%);
+    -ms-transform: rotate(5deg) translateY(5%);
+    -o-transform: rotate(5deg) translateY(5%);
+  }
+}
+
+/*=============================
+::6.0 Counter css
+=================================*/
+/*=============================
+::7.0 Features css
+=================================*/
+/*=============================
+::8.0 About css
+=================================*/
+/*=============================
+::9.0 Best features css
+=================================*/
+/*=============================
+::10.0 Vidoe overview css
+=================================*/
+/*=============================
+::11.0 Pricing css
+=================================*/
+/*=============================
+::12.0 Trusted client css
+=================================*/
+/*=============================
+::13.0 Screenshots css
+=================================*/
+/*=============================
+::14.0 Accordian css
+=================================*/
+/*=============================
+::15.0 Blog css
+=================================*/
+/*=============================
+::16.0 Team css
+=================================*/
+/*=============================
+::17.0 Contact css
+=================================*/
+/*=============================
+::18.0 Lovely clinet css
+=================================*/
+/*=============================
+::19.0 Footer
+=================================*/
