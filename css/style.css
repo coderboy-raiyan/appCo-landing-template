@@ -155,11 +155,36 @@ section {
 }
 
 /* Navbar fixed  */
-/* .navbar-sticky {
+.navbar-sticky {
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.navbar-sticky-transition {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.navbar-sticky-moved-up {
   position: fixed;
   top: 0;
-  background: var(--bg-linear-gradient);
-} */
+  background: #fff;
+  margin-top: -6.25rem;
+}
+.navbar-sticky-on {
+  margin-top: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
 
 /*=============================
 ::5.0 Hero css
@@ -228,6 +253,31 @@ section {
 /*=============================
 ::6.0 Counter css
 =================================*/
+.counter_area {
+  position: absolute;
+  width: 100%;
+  bottom: -68px;
+  height: auto;
+}
+.main_counter {
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+.singal_counter span {
+  font-size: 2.5rem;
+  color: var(--text-blue);
+  font-weight: 700;
+}
+.singal_counter h5 {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: rgb(131, 131, 131);
+  font-weight: 300;
+}
+
 /*=============================
 ::7.0 Features css
 =================================*/
