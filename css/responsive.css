@@ -25,7 +25,7 @@
 /*============================
   ::2.0 Mobile Devices
   ==============================*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 765px) {
   /*=============================
   ::4.0 Header css
   =================================*/
@@ -83,7 +83,7 @@
   }
   .hero-image {
     width: 78%;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
   }
   .hero_text {
     margin-top: 4rem;
@@ -94,10 +94,9 @@
 ::6.0 Counter css
 =================================*/
   .counter_area {
-    position: absolute;
+    position: static;
     width: 100%;
-    bottom: -10rem;
-    height: auto;
+    height: 100%;
   }
   .main_counter {
     width: 100%;
@@ -159,5 +158,11 @@
 
   .hero-image {
     width: 90%;
+  }
+  /*=============================
+::6.0 Counter css
+=================================*/
+  .singal_counter {
+    border-right: 1px solid #ddd;
   }
 }
