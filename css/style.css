@@ -253,6 +253,7 @@ section {
 /*=============================
 ::6.0 Counter css
 =================================*/
+
 .counter_area {
   position: absolute;
   width: 100%;
@@ -281,6 +282,64 @@ section {
 /*=============================
 ::7.0 Features css
 =================================*/
+#key-features {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 100%;
+}
+.common_title {
+  font-size: 1.5rem;
+  color: var(--text-blue);
+  font-weight: 700;
+}
+.common_title_main {
+  font-size: 3.5rem;
+  font-weight: 600;
+  width: 50%;
+  margin-bottom: 3.5rem;
+}
+.card_inner {
+  height: 19rem;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  cursor: pointer;
+}
+.card_inner:hover h3,
+.card_inner:hover span,
+.card_inner:hover p {
+  color: #fff;
+}
+
+.card_inner:hover {
+  background: var(--bg-card);
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+}
+.card_inner span {
+  font-size: 2.8rem;
+  color: var(--text-blue);
+  margin-bottom: 2.7rem;
+  line-height: 6rem;
+}
+.card_inner h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.card_inner p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgb(131, 131, 131);
+}
 /*=============================
 ::8.0 About css
 =================================*/
