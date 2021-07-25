@@ -278,6 +278,11 @@ section {
   color: rgb(131, 131, 131);
   font-weight: 300;
 }
+.border-one,
+.border-two,
+.border-three {
+  border-right: 1px solid #ddd;
+}
 
 /*=============================
 ::7.0 Features css
