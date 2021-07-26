@@ -360,6 +360,44 @@ section {
 /*=============================
 ::8.0 About css
 =================================*/
+#about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 100%;
+  background: #f4f7fa;
+}
+#about .common_title_main {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.about_left_side p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: rgb(105, 105, 105);
+  margin-bottom: 2rem;
+}
+.about_left_side li {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: rgb(105, 105, 105);
+  font-weight: 300;
+  width: 100%;
+}
+.about_left_side .fas {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 /*=============================
 ::9.0 Best features css
 =================================*/
