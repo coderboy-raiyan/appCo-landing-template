@@ -122,6 +122,20 @@
   .common_title_main {
     width: 100%;
   }
+
+  /* <!--===================== 
+      Best Features Section
+    =========================== --> */
+  .feature .feature_icon {
+    text-align: center;
+    width: 100%;
+  }
+  .feature_des {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 /*============================

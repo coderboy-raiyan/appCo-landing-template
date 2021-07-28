@@ -401,6 +401,99 @@ section {
 /*=============================
 ::9.0 Best features css
 =================================*/
+.features-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 100%;
+}
+.features-section .common_title {
+  text-align: center;
+}
+.features-section .common_title_main {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+.features-section .about-des {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-size: 1.6rem;
+  color: #707070;
+  font-weight: 300;
+  line-height: 2.7rem;
+  margin-bottom: 4rem;
+}
+.features_inner {
+  margin-bottom: 4rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.feature .feature_icon {
+  font-size: 2.3rem;
+}
+.feature .feature_icon .smile {
+  background: #efdff7;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+  color: #a38abb;
+}
+.feature .feature_icon .bazier {
+  background: #c6e6fd;
+  padding: 1.4rem 1em;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #66b0e3;
+}
+.feature .feature_icon .headphone {
+  background: #efe3e3;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+
+  color: #ed7265;
+}
+.feature .feature_icon .layout {
+  background: #efe3e3;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+
+  color: #ed7265;
+}
+.feature .feature_icon .cardit {
+  background: #efe3e3;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+
+  color: #ed7265;
+}
+.feature .feature_icon .palette {
+  background: #efe3e3;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50%;
+
+  color: #ed7265;
+}
+
+.feature_des {
+  width: 85%;
+  padding: 0 2rem;
+}
+.feature_des h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.feature_des p {
+  font-size: 1.5rem;
+  color: #707070;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+
 /*=============================
 ::10.0 Vidoe overview css
 =================================*/
