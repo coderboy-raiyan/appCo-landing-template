@@ -31,23 +31,25 @@ navMenu();
 
 // ======================Counter Design===============//
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   function counter(id, start, end, duration) {
-//     let obj = document.getElementById(id);
-//     current = start;
-//     range = end - start;
-//     increment = end > start ? 1 : -1;
-//     step = Math.abs(Math.floor(duration / range));
-//     timer = setInterval(() => {
-//       current += increment;
-//       obj.textContent = current;
-//       if (current == end) {
-//         clearInterval(timer);
-//       } 
-//     }, step);
-//   }
-//   counter("count1",0,10,2000);
-//   counter("count2",100,20,3000);
-//   counter("count3",0,30,4000);
-//   counter("count4",0,10,2000);
-// });
+let counters = document.querySelectorAll('.count')
+
+
+  counters.forEach((counter)=>{
+    counter.innerHTML = 0
+  
+    let updateCounter = () => {
+      let targetCount = Number(counter.getAttribute('data-target'))
+      let startingCount = Number(counter.innerHTML)
+      let incr = Math.floor(targetCount / 100)
+      if(startingCount < targetCount){
+        counter.innerHTML = `${startingCount + incr}`
+        setTimeout(updateCounter, 10)
+      }else{
+        counter.innerHTML = targetCount
+      }
+    }
+  
+    updateCounter()
+  })
+
+
